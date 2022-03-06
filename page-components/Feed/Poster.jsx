@@ -23,7 +23,7 @@ const PosterInner = ({ user }) => {
       e.preventDefault();
       try {
         setIsLoading(true);
-        await fetcher('/api/posts', {
+        await fetcher('/api/notes', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ content: contentRef.current.value }),
@@ -48,11 +48,11 @@ const PosterInner = ({ user }) => {
         <Input
           ref={contentRef}
           className={styles.input}
-          placeholder={`What's on your mind, ${user.name}?`}
-          ariaLabel={`What's on your mind, ${user.name}?`}
+          placeholder={`Type in a note, ${user.name}`}
+          ariaLabel={`Type in a note, ${user.name}`}
         />
         <Button type="success" loading={isLoading}>
-          Post
+          Create Note
         </Button>
       </Container>
     </form>

@@ -47,7 +47,7 @@ handler.post(
       html: `
       <div>
         <p>Hello, ${user.name}</p>
-        <p>Please follow <a href="${process.env.WEB_URI}/forget-password/${token._id}">this link</a> to reset your password.</p>
+        <p>Please follow <a href="${process.env.NEXT_PUBLIC_WEB_URI}/forget-password/${token._id}">this link</a> to reset your password.</p>
       </div>
       `,
     });

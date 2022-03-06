@@ -23,11 +23,11 @@ handler.post(async (req, res) => {
   await sendMail({
     to: req.user.email,
     from: MAIL_CONFIG.from,
-    subject: `Verification Email for ${process.env.WEB_URI}`,
+    subject: `Verification Email for ${process.env.NEXT_PUBLIC_WEB_URI}`,
     html: `
       <div>
         <p>Hello, ${req.user.name}</p>
-        <p>Please follow <a href="${process.env.WEB_URI}/verify-email/${token._id}">this link</a> to confirm your email.</p>
+        <p>Please follow <a href="${process.env.NEXT_PUBLIC_WEB_URI}/verify-email/${token._id}">this link</a> to confirm your email.</p>
       </div>
       `,
   });

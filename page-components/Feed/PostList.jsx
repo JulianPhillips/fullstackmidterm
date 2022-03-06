@@ -20,7 +20,7 @@ const PostList = () => {
         {posts.map((post) => (
           <Link
             key={post._id}
-            href={`/user/${post.creator.username}/post/${post._id}`}
+            href={`/user/${post.creator.username}/notes/${post._id}`}
             passHref
           >
             <div className={styles.wrap}>

@@ -4,7 +4,7 @@
 
 <div align="center">
   
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhoangvvo%2Fnextjs-mongodb-app&env=MONGODB_URI,CLOUDINARY_URL,NODEMAILER_CONFIG,WEB_URI&envDescription=Environment%20Variables&envLink=https%3A%2F%2Fgithub.com%2Fhoangvvo%2Fnextjs-mongodb-app%23environmental-variables&demo-title=nextjs-mongodb-app%20demo&demo-description=A%20demo%20deployed%20on%20Vercel&demo-url=https%3A%2F%2Fnextjs-mongodb.vercel.app%2F)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fhoangvvo%2Fnextjs-mongodb-app&env=MONGODB_URI,CLOUDINARY_URL,NODEMAILER_CONFIG,NEXT_PUBLIC_WEB_URI&envDescription=Environment%20Variables&envLink=https%3A%2F%2Fgithub.com%2Fhoangvvo%2Fnextjs-mongodb-app%23environmental-variables&demo-title=nextjs-mongodb-app%20demo&demo-description=A%20demo%20deployed%20on%20Vercel&demo-url=https%3A%2F%2Fnextjs-mongodb.vercel.app%2F)
 
 An [**Next.js**](https://github.com/zeit/next.js/) and [**MongoDB**](https://www.mongodb.com/) web application, designed with simplicity for learning and real-world applicability in mind.
 
@@ -105,7 +105,7 @@ This project uses the following dependencies:
 Environmental variables in this project include:
 
 - `MONGODB_URI` The MongoDB Connection String (with credentials and database name)
-- `WEB_URI` The _URL_ of your web app.
+- `NEXT_PUBLIC_WEB_URI` The _URL_ of your web app.
 - `CLOUDINARY_URL` (optional, Cloudinary **only**) Cloudinary environment variable for configuration. See [this](https://cloudinary.com/documentation/node_integration#configuration).
 - `NODEMAILER_CONFIG` (optional, if using nodemailer **only**) JSON stringified nodemailer config. eg. `{"service":"Gmail","auth":{"user":"hoangvvo.02@gmail.com","pass":"aHR0cHM6Ly95b3V0dS5iZS9kUXc0dzlXZ1hjUQ=="}}`
 
@@ -121,20 +121,5 @@ After building using `npm run build`, simply start the server using `npm run sta
 
 You can also deploy this with serverless providers given the correct setup.
 
-<h2 align="center">Contributing</h2>
 
-<div align="center">
-  
-Please see my [contributing.md](CONTRIBUTING.md).
 
-</div>
-
-<h2 align="center">
-  License
-</h2>
-
-<div align="center">
-  
-  [MIT](LICENSE)
-  
-</div>
