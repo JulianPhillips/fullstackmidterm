@@ -2,6 +2,15 @@
 
 <h1 align="center">Julians Note App</h1>
 
+<h2 align="center">set up</h2>
+
+- clone repo
+- npm i
+- set up mongodb community on your computer (https://docs.mongodb.com/manual/administration/install-community/)
+- set envrionment variables listed below to your local device (see .env file for default)
+- npm run dev
+- enjoy
+
 
 <h2 align="center">Features</h2>
 
