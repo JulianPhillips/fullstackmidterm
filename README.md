@@ -10,6 +10,7 @@
 - set envrionment variables listed below to your local device (see .env file for default)
 - npm run dev
 - enjoy
+- go to [webappurl]/notes to crud notes
 
 
 <h2 align="center">Features</h2>
